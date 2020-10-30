@@ -1,16 +1,12 @@
 <template>
-  <div>
-    
-    <todos v-model="todos"></todos>
-    <todos v-model="todos"></todos>
-    <todos></todos>
-    <button @click="addTodo">Ajouter une tache</button>
+     <div id="app">
+    <List/>
   </div>
 </template>
 
 <script>
 import Todos from './components/Todos'
-
+import List from './components/List.vue'
 export default {
 
   data() {
@@ -30,7 +26,7 @@ export default {
     }
   },
   components: {
-    Todos
+    Todos, List
   }
 }
 </script>
